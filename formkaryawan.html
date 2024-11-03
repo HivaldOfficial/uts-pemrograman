@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <title>Dashboard Karyawan</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-light bg-info p-1">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/unpam.png" alt="" width="40" class="logo-img d-inline-block align-text-top" />
+          Universitas Pamulang
+        </a>
+        <form class="form-inline my-2 my-lg-0 ml-auto">
+          <img src="../admin dashboard/img/2.jpeg" alt="Logo" width="35" class="navbar-img logo-img" />
+        </form>
+      </div>
+    </nav>
+    <!-- Sidebar -->
+    <div class="row no-gutters mt-5" id="home" style="height: 150vh">
+      <div class="sidebar col-md-2 mt-2 bg-dark px-4" style="height: 150vh">
+        <div class="profile-section">
+          <img src="img/2.jpeg" alt="Profile Picture" />
+          <h5>Muhammad Kevin</h5>
+          <p>Administrator</p>
+        </div>
+        
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="index.html"><i class="bi bi-house-add me-2"></i>Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">MENU KARYAWAN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="karyawan.html"><i class="bi bi-people me-2"></i>Karyawan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="jabatan.html"><i class="bi bi-person-fill-add me-2"></i>Jabatan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="divisi.html"><i class="bi bi-building-fill-add me-2"></i>Divisi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">MENU ABSENSI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="absensi.html"><i class="bi bi-calendar2-check-fill me-2"></i>Absensi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="izin.html"><i class="bi bi-calendar-plus me-2"></i>Izin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="lembur.html"><i class="bi bi-calendar-plus me-2"></i>Lembur</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">MENU GAJI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#gaji"><i class="bi bi-cash-coin me-2"></i>Slip Gaji</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Forms Tambah Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="formkaryawan.html"><i class="bi bi-people me-2"></i>Input Karyawan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">KELUAR WEB</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#logout"><i class="bi bi-door-open me-2"></i>Logout</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-10 p-4 pt-3">
+        <h3>Sistem Informasi Manajemen Karyawan</h3>
+        <h5>Admin Dashboard</h5>
+        <hr />
+
+        <!--nav-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand text-dark" href="#"><b>Forms</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="#"><i class="bi bi-house-add-fill"></i></a>
+                <a class="nav-link" href="#">></a>
+                <a class="nav-link" href="#">Karyawan</a>
+                <a class="nav-link" href="#">></a>
+                <a class="nav-link" href="#">Tambah Data Karyawan</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!--nav-->
+              <div class="col-md-10 p-4 pt-2 bg-secondary">
+                <h5>Tambah Data Karyawan</h5>
+                <hr />
+
+                    <label for="inputnama" class="form-label">Nama Lengkap</label>
+                    <input type="nama" id="inputnama" class="form-control">
+                    <label for="TextControlInput1" class="form-label">Jenis Kelamin</label>
+                    <input type="Text" class="form-control" id="TextControlInput1" placeholder="~~~">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="inputnama" class="form-control">
+                    <label for="inputnama" class="form-label">No HP</label>
+                    <input type="nama" id="inputnama" class="form-control">
+                    <label for="AlamatControlTextarea1" class="form-label">Alamat</label>
+                    <textarea class="form-control" id="AlamatControlTextarea1" rows="3"></textarea>
+                    <label for="inputPassword5" class="form-label">Password</label>
+                    <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                    <label for="TextControlInput1" class="form-label">Jabatan</label>
+                    <input type="Text" class="form-control" id="TextControlInput1" placeholder="~~~">
+                    <label for="TextControlInput1" class="form-label">Divisi</label>
+                    <input type="Text" class="form-control" id="TextControlInput1" placeholder="~~~">
+
+                    <div class="d-flex gap-2 mt-2">
+                        <div class="col-md-2 bg-success d-flex justify-content-center align-items-center">
+                          <p class="mt-3"><i class="bi bi-floppy-fill mb-2"></i> simpan</p>
+                        </div>
+                        <div class="col-md-2 bg-danger d-flex justify-content-center align-items-center">
+                          <p class="mt-3"><i class="bi bi-arrow-counterclockwise"></i> Batal</p>
+                        </div>
+                      </div>
+                      
+</div>
+
+                      
+                
+                </div>
+              </div>
+            </div>
+            <!-- end navbar -->
+        
+            <!-- Option 1: Bootstrap Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+          </body>
+        </html>
+        
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
